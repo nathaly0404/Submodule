@@ -34,7 +34,6 @@
                  original after it -->
             <xpath expr = "// field [@ name = 'line_ids'] / tree / field [@ name = 'account_id']" position = "before" > 
                     <field name="original" string="Original"/>
-                </xpath>
             </xpath>
         </field>
     </record>
