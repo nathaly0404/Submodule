@@ -32,8 +32,9 @@
         <field name="arch" type="xml">
             <!-- find field ref and add the field
                  original after it -->
-            <xpath expr="//page[@name='Information']//group[@name='Amount']//field[@name='account_id']" position="after">
-              <field name="original" string="Original"/>
+            <xpath expr = "// field [@ name = 'line_ids'] / tree / field [@ name = 'account_id']" position = "before" > 
+                    <field name="original" string="Original"/>
+                </xpath>
             </xpath>
         </field>
     </record>
