@@ -8,7 +8,7 @@
     'author': 'Quilsoft',
     'maintainer': 'Quilsoft',
     'company': 'Quilsoft',
-    'depends': ['accunt.move', 'account.move.line'],
+    'depends': ['account'],
     'data': [
         'views/fields_views.xml',
     ],
