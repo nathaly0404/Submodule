@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- improved idea categories list -->
     <record id="field_view_id" model="ir.ui.view">
         <field name="name">field.new</field>
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <!-- find field ref and add the field
+                 original after it -->
+            <xpath expr="//field[@name='ref']" position="after">
+              <field name="original" string="Original"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="field_view_line_id" model="ir.ui.view">
+        <field name="name">field.new.line</field>
+        <field name="model">account.move.line</field>
+        <field name="inherit_id" ref="account.view_move_line_tree"/>
         <field name="arch" type="xml">
             <!-- find field ref and add the field
                  original after it -->
