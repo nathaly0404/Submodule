@@ -20,7 +20,7 @@
         <field name="arch" type="xml">
             <!-- find field ref and add the field
                  original after it -->
-            <xpath expr="//field[@name='ref']" position="after">
+            <xpath expr="//field[@name='account_id']" position="after">
               <field name="original" string="Original"/>
             </xpath>
         </field>
