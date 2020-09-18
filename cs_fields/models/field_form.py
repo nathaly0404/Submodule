@@ -2,7 +2,7 @@
 #############################################################################
 
 
-from odoo import api, models
+from odoo import api, models, fields
 
 
 class FieldAccountMove(models.Model):
@@ -14,5 +14,5 @@ class FieldAccountMove(models.Model):
 class FieldAccountMoveLine(models.Model):
     _inherit =  'account.move.line'
 
-    original_linea = fields.Integer(help="Campo para verificar script de migración", string="Original Linea")
-    
+    original = fields.Integer(help="Campo para verificar script de migración", string="Original Linea")
+
