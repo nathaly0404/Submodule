@@ -10,7 +10,7 @@
     'company': 'Quilsoft',
     'depends': ['account'],
     'data': [
-        'views/fields_views.xml',
+        #'views/fields_views.xml',
     ],
     'installable': True,
     'application': False,
