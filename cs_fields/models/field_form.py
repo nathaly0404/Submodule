@@ -16,3 +16,7 @@ class FieldAccountMoveLine(models.Model):
 
     original = fields.Integer(help="Campo para verificar script de migración", string="Original Linea")
 
+class PartnerOriginal(models.Model):
+	_inherit = 'res.partner'
+
+	original = fields.Integer(string="Original")

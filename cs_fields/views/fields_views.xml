@@ -28,4 +28,17 @@
             </xpath>
         </field>
     </record>
+
+    <record id="field_view_id3" model="ir.ui.view">
+        <field name="name">field.new.partner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <!-- find field ref and add the field
+                 original after it -->
+            <xpath expr="//field[@name='category_id']" position="after">
+              <field name="original" string="Original"/>
+            </xpath>
+        </field>
+    </record>
 </odoo>
